@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        body {
+            /* Gradient background */
+            background: linear-gradient(to bottom, #85D8FF, #FFFFFF);
+            /* Estender o gradiente para cobrir toda a página */
+            width: 100%;
+            height: 100%;
+            /* Outras propriedades... */
+            font-family: 'Montserrat', sans-serif;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cabecalho {
+            background-color: #22D4FD;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .cabecalho__menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .cabecalho__menu__link {
+            font-size: 1.2em;
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .cabecalho__menu__link:hover {
+            color: #F6F6F6;
+        }
+
+        .apresentacao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+
+        .apresentacao__conteudo {
+            max-width: 800px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .apresentacao__conteudo__titulo {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .apresentacao__conteudo__texto {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .apresentacao__imagem {
+            margin-top: 30px;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .rodape {
+            background-color: #22D4FD;
+            padding: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo">Bem-vindo à minha página inicial</h1>
+            <p class="apresentacao__conteudo__texto">Sinta-se à vontade para explorar e conhecer mais sobre mim e meu trabalho.</p>
+            <p class="apresentacao__conteudo__texto">Esta página foi criada com HTML e CSS. Espero que goste!</p>
+        </section>
+        <img class="apresentacao__imagem" src="./assets/ESTILO.jpg" alt="Imagem de boas-vindas">
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por João Lucas.</p>
+    </footer>
+</body>
+
+</html>
